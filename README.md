@@ -7,6 +7,8 @@ The project mainly analyzes the online and offline sales pattern, tries to figur
 
 ![Camparison of online and offline sales pattern](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/img/online_offline_Compare.png)
 
+The results are shown in [statistic_analysis_retail.ipynb](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/statistics_analysis_retail.ipynb)
+
 ## Environment Setup
 
 To run this project, the following Python packages need to be installed:
