@@ -7,7 +7,7 @@ The project mainly analyzes the online and offline sales pattern, tries to figur
 
 ![Camparison of online and offline sales pattern](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/img/online_offline_Compare.png)
 
-The results are shown in [statistic_analysis_retail.ipynb](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/statistics_analysis_retail.ipynb)
+The results are shown in [statistic_analysis_retail.ipynb](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/statistics_analysis_retail.ipynb)After we processed the collected data, we conducted descriptive analysis, t-test and regression analysis on the data.
 
 ## Environment Setup
 
