@@ -4,6 +4,7 @@
 % Replace `english' with e.g. `spanish' to change the document language
 \usepackage[english]{babel}
 
+
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
@@ -13,15 +14,17 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{Transforming in the Digital Tide: An In-depth Analysis of the Impact of E-Commerce on Brick-and-Mortar Retail in China, 2018-2021}
-\author{You}
+\title{Transforming in the Digital Tide: An In-depth Analysis of the Impact of E-Commerce on Brick-and-Mortar Retail in China, 2019-2023}
+
+\author{Qingyue Chen 22-737-639\\Shiyang Jin 22-737-712\\
+Yuru Jin 21-749-650\\Zhengyu Duan 22-736-904}
+
 
 \begin{document}
 \maketitle
 
-\begin{abstract}
-Your abstract.
-\end{abstract}
+\tableofcontents %
+\newpage
 
 \section{Introduction}
 The rapid expansion and integration of e-commerce in China has significantly changed the retail landscape in recent years. This report presents an in-depth analytical exploration of this transformation, focusing on how the burgeoning e-commerce sector influences and reshapes traditional brick-and-mortar retail. The comprehension of global retail trends necessitates a thorough awareness of the dynamics in China, which currently has a prominent position in Internet commerce.Our analysis begins with a comprehensive overview of the retail market in China, laying the groundwork to appreciate the scale and pace of change. We delve into the historical data on retail sales, examining online and offline channels to identify trends, patterns, and significant shifts in consumer behaviour. The aforementioned historical framework serves as a foundation upon which the contemporary emergence of e-commerce can be situated.We then turn our attention to the core of this report: the interplay between e-commerce and traditional retail. Here, we dissect the growth rates of online sales against their offline counterparts, revealing the impact of digital platforms on market share and consumer preferences and how traditional retailers adapt to this new era. This analysis seeks to illuminate the nuances of the transition from physical stores to digital platforms, highlighting areas of synergy, competition, and transformation.While our investigation touches on topics pertinent to various stakeholders in the retail industry, it is essential to clarify that this report's primary objective is analytical. We aim to offer a detailed, data-driven examination of the evolving retail landscape in China. Our focus is on unpacking the complex dynamics at play and providing a narrative that is rich in detail and insights.
@@ -60,7 +63,7 @@ This backdrop sets the stage for our investigation into how the e-commerce surge
 \subsection*{Data Sources and Collection}
 
 \subsubsection*{Sources}
-Our primary data source is the official website of the National Bureau of Statistics of China, which provides monthly growth figures for online and offline consumption. This rich dataset offers an in-depth view of the evolving retail landscape in China from 2018 to 2021, encompassing various product categories and retail formats.
+Our primary data source is the official website of the National Bureau of Statistics of China, which provides monthly growth figures for online and total consumption. This rich dataset offers an in-depth view of the evolving retail landscape in China from 2019 to 2023, encompassing various product categories and retail formats.
 
 \subsubsection*{Data Collection}
 The collection process involved the use of web scraping techniques to efficiently gather large volumes of data. By deploying Python-based scraping tools, we were able to automate the extraction of relevant data, ensuring accuracy and timeliness.
@@ -68,7 +71,7 @@ The collection process involved the use of web scraping techniques to efficientl
 \subsection*{Data Description}
 
 \subsubsection*{Overview}
-The dataset spans from 2018 to 2021, detailing monthly consumption amounts for both online and offline channels. It includes relative growth rates, breaking down offline sales into different categories to reveal trends and shifts in consumer behavior.
+The dataset spans from 2019 to 2023, detailing monthly consumption amounts for both online and offline channels. It includes relative growth rates, breaking down offline sales into different categories to reveal trends and shifts in consumer behavior.
 
 \subsubsection*{Key Insights}
 \begin{itemize}
@@ -113,60 +116,123 @@ This streamlined and ethical web scraping process ensured the collection of comp
 This data-centric approach lays the foundation for a comprehensive analysis of the evolving retail landscape in China, highlighting key trends and patterns that have implications for the global retail sector.
 
 
+\section{Descriptive analysis}
+First, we conducted a descriptive statistical analysis of the obtained data. Use python to load the data set and then clean the data. Since we only have the monthly cumulative value of online sales, we need to calculate the monthly online sales through the cumulative value. Through the cumulative value of total retail sales and online retail sales, we can also calculate the value of monthly offline sales.
+
+This graph shows the monthly online retail sales in goods over a period from 2019 to 2023.
+The sales values, measured in millions (M), appear to fluctuate month over month with some peaks and troughs. It looks like there may be seasonal patterns or specific events causing these variations.
+There is an overall increasing trend in the data points over the years.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{online_sales_data.png}
+  \caption{Online Sales Data}
+  \label{fig:yourlabel}
+\end{figure}
+
+This graph represents monthly in-store retail sales in goods for the same time period.
+The values here are also in millions and exhibit more significant fluctuations compared to the online sales data.
+There seems to be a sharp increase or peak in sales around the start of 2020, which might indicate a seasonal effect or an event that caused an increase in in-store purchases.
+Both graphs provide a visual representation of sales trends over time and could be useful for analyzing the performance of online vs. in-store sales, understanding seasonal effects on retail, and planning for inventory or marketing strategies.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{offline_sales_data.png}
+  \caption{Offline Sales Data}
+  \label{fig:yourlabel}
+\end{figure}
 
 
-\subsection{How to add Comments and Track Changes}
-
-Comments can be added to your project by highlighting some text and clicking ``Add comment'' in the top right of the editor pane. To view existing comments, click on the Review menu in the toolbar above. To reply to a comment, click on the Reply button in the lower right corner of the comment. You can close the Review pane by clicking its name on the toolbar when you're done reviewing for the time being.
-
-Track changes are available on all our \href{https://www.overleaf.com/user/subscription/plans}{premium plans}, and can be toggled on or off using the option at the top of the Review pane. Track changes allow you to keep track of every change made to the document, along with the person making the change. 
-
-\subsection{How to add Lists}
-
-You can make lists with automatic numbering \dots
-
-\begin{enumerate}
-\item Like this,
-\item and like this.
-\end{enumerate}
-\dots or bullet points \dots
-\begin{itemize}
-\item Like this,
-\item and like this.
-\end{itemize}
-
-\subsection{How to write Mathematics}
-
-\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
-\[S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-      = \frac{1}{n}\sum_{i}^{n} X_i\]
-denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{online_offline_Compare.png}
+  \caption{Online and offline sales compare}
+  \label{fig:yourlabel}
+\end{figure}
 
 
-\subsection{How to change the margins and paper size}
+\section{Statistic analysis}
+\subsection{Seasonal analysis}
+\paragraph{Offline Seasonal analysis}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Seasonal_analysis_offline.png}
+  \caption{Offline Seasonal analysis}
+  \label{fig:yourlabel}
+\end{figure}
 
-Usually the template you're using will have the page margins and paper size set correctly for that use-case. For example, if you're using a journal article template provided by the journal publisher, that template will be formatted according to their requirements. In these cases, it's best not to alter the margins directly.
+In Figure 4, Original Data shows the original monthly sales of physical store retail. From the figure we can see that sales show certain fluctuations, which may be caused by various factors such as market demand, promotional activities or seasonal factors.
 
-If however you're using a more general template, such as this one, and would like to alter the margins, a common way to do so is via the geometry package. You can find the geometry package loaded in the preamble at the top of this example file, and if you'd like to learn more about how to adjust the settings, please visit this help article on \href{https://www.overleaf.com/learn/latex/page_size_and_margins}{page size and margins}.
+The Trend section reveals the long-term trend of the data, eliminating the effects of seasonality and other irregularities. As can be observed from the chart, the trend line showed a decline at the beginning of 2020, which was most likely related to the COVID-19 pandemic, and then the data showed a gradual recovery and continued upward trend.
 
-\subsection{How to change the document language and spell check settings}
+Seasonality reveals seasonal patterns in data, that is, regular fluctuations that occur periodically throughout the year. The chart indicates a regular increase or decrease in sales data during specific months, indicating that sales are significantly affected by seasonality.
 
-Overleaf supports many different languages, including multiple different languages within one document. 
+\paragraph{Online Seasonal analysis}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Seasonal_analysis_online.png}
+  \caption{Online Seasonal analysis}
+  \label{fig:yourlabel}
+\end{figure}
 
-To configure the document language, simply edit the option provided to the babel package in the preamble at the top of this example project. To learn more about the different options, please visit this help article on \href{https://www.overleaf.com/learn/latex/International_language_support}{international language support}.
+Figure 5 shows the patterns observed in online sales data over several years. The original data in the top chart captures the monthly fluctuations, showing peaks and troughs that reveal how online sales volumes change over time. Notably, there is an increase in sales towards the end of each year, likely influenced by annual e-commerce promotional events in November and December.
+The trend component smooths out short-term irregularities and seasonal effects to elucidate the underlying long-term trend in online sales data. This trend is generally upward, indicating a consistent growth in online sales, which may be reflective of the broader expansion and adoption of e-commerce practices.
 
-To change the spell check language, simply open the Overleaf menu at the top left of the editor window, scroll down to the spell check setting, and adjust accordingly.
+The seasonal component of the data illustrates the cyclic patterns that recur within each year. The regular occurrence of peaks and troughs suggests that online sales are significantly influenced by seasonal factors, such as holiday periods and specific sales events like Black Friday and Christmas, which traditionally see an uptick in retail activity. This seasonality is characteristic of the retail industry, where certain times of the year consistently exhibit higher or lower sales due to these well-established commercial and cultural events.
 
-\subsection{How to add Citations and a References List}
+\subsection{t-test}
+First, test the variance of the two sets of sample data: online monthly sales and offline monthly sales. At a significance level of 0.05, use the Levene statistic to determine whether the variances are equal based on the p value. If the p-value is less than the significance level, the variances of the two sets of data are considered to be unequal, and vice versa.
+\\The results are shown as Levene Statistics: 0.6410067116098597, p -value: 0.42504157050096525
+Therefore, we failed to reject the null hypothesis of equal variances and considered the variances of the two sets of data to be equal.
+\\In the case of equal variances, We use t-test to test whether there is a statistically significant difference between the means of online and offline sales data.
+\\Then, conduct a t test on the two sets of data, online monthly sales and offline monthly sales, to compare the means of sales. Choose a significance level of 0.05. If the test p-value is less than the significance level, the null hypothesis is rejected and there is no significant difference in the means of the two sets of sales data, and vice versa.
+\\The results are displayed as t statistics: -41.477883180273004, p-value: 1.0659906776480866e-66. Therefore, we reject the null hypothesis and believe that there is a significant difference in the means of the two sets of data.
 
-You can simply upload a \verb|.bib| file containing your BibTeX entries, created with a tool such as JabRef. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|. You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
+\subsection{Regression analysis}
 
-If you have an \href{https://www.overleaf.com/user/subscription/plans}{upgraded account}, you can also import your Mendeley or Zotero library directly as a \verb|.bib| file, via the upload menu in the file-tree.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Regression results.png}
+  \caption{Regression results}
+  \label{fig:yourlabel}
+\end{figure}
 
-\subsection{Good luck!}
+The regression output provides various statistics about the relationship between online monthly sales (x) and in-store monthly sales (y).
 
-We hope you find \cite{greenwade93}Overleaf useful, and do take a look at our \href{https://www.overleaf.com/learn}{help library} for more tutorials and user guides! Please also let us know if you have any feedback using the Contact U\cite{luo2019commerce} link at the bottom of the Overleaf menu --- or use the contact form at \url{https://www.overleaf.com/contact}.
+The R-squared value is 0.108, meaning that approximately 10.8 of the variability in in-store sales can be explained by the variability in online sales. This is a relatively low value, suggesting that online sales are not a strong predictor of in-store sales.
 
+The F-statistic is 6.669 with a p-value of 0.0125. This suggests that the model is statistically significant at a common alpha level of 0.05, meaning there is a statistically significant relationship between online and in-store sales.
+
+Coefficients:
+The intercept is approximately 22,950 with a p-value of 0.000, indicating that it is statistically significant. This value represents the expected in-store sales when online sales are zero.
+The coefficient for online sales is 0.4333 with a p-value of 0.013, which is also statistically significant. This coefficient means that for every unit increase in online sales, in-store sales increase by approximately 0.4333 units.
+
+In summary, while the model indicates a statistically significant relationship between online and in-store sales, the low R-squared value means that online sales are not a strong predictor of in-store sales. With the growth of online retail sales, the in-store retail sales will also increase slightly.
+
+This is contrary to our guess that the growth of online sales will greatly weaken offline sales. The reason for this may be that the overall social economy has recovered after the epidemic, and both online and offline sales have increased.
+
+\subsection{Deseasonalized regression}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Deseasonalized regression.png}
+  \caption{Regression results}
+  \label{fig:yourlabel}
+\end{figure}
+
+After removing the seasonality factor and performing the regression analysis, here's the interpretation of the results:
+
+The R-squared value is 0.162, which indicates that the model explains 16.2 of the variance in the de-seasonalized in-store sales. This is an improvement over the previous model with seasonality, suggesting that online sales are a more significant predictor of in-store sales after removing the seasonal effect.
+
+The F-statistic is 8.292 with a p-value of 0.00618. This suggests that the model is statistically significant, and the relationship between online sales and de-seasonalized in-store sales is not due to random chance.
+
+The coefficient for the constant term is approximately 196,600 with a p-value close to 0. This suggests a significant intercept, which could be interpreted as the baseline level of in-store sales when online sales are zero (assuming the model is correctly specified).
+
+The coefficient for online sales is about 0.7825 with a p-value of 0.006, indicating a statistically significant relationship between online sales and de-seasonalized in-store sales. For every unit increase in online sales, de-seasonalized in-store sales increase by approximately 0.7825 units.
+
+\section{Conclusion}
+
+\newpage
 \bibliographystyle{alpha}
 \bibliography{sample}
 
