@@ -1,0 +1,7 @@
+@article{luo2019commerce,
+  title={E-Commerce development and household consumption growth in China},
+  author={Luo, Xubei and Wang, Yue and Zhang, Xiaobo},
+  journal={World Bank Policy Research Working Paper},
+  number={8810},
+  year={2019}
+}
