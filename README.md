@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project aims to analyze the impact of E-Commerce on Brick-and-Mortar Retail in China. By crawling consumption data from 2018-2021 released by the National Bureau of Statistics of China, processing this data, and conducting a visual analysis, this project seeks to contribute to the broader dialogue on the future of retail in the digital age.
+This project aims to analyze the impact of E-Commerce on Brick-and-Mortar Retail in China. By crawling consumption data from 2019-2023 released by the National Bureau of Statistics of China, processing this data, and conducting a visual analysis, this project seeks to contribute to the broader dialogue on the future of retail in the digital age.
 The project mainly analyzes the online and offline sales pattern, tries to figure out the logistics behind the phenomenon, the main figure is as shown below.
 
 ![Camparison of online and offline sales pattern](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/img/online_offline_Compare.png)
