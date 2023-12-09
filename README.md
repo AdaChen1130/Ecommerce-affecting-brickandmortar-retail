@@ -45,10 +45,10 @@ The following notebook is dedicated to the preprocessing of the scraped data:
 
 ##Analysis
 ### Visual Analysis
-In the [’e_commerce_Visualization.ipynb‘](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/e_commerce_Visualization.ipynb) file, we visualized data from almost all categories and created visualizations in different views based on the type of data. This process helped in uncovering elements that are significant for analysis.
+In the [e_commerce_Visualization.ipynb](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/e_commerce_Visualization.ipynb) file, we visualized data from almost all categories and created visualizations in different views based on the type of data. This process helped in uncovering elements that are significant for analysis.
 
 ### Regression Analysis
-In the [‘statistics_analysis_retail。ipynb’](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/statistics_analysis_retail.ipynb) file, we conducted trend analysis and significance testing on key parts of the above code. This helped in understanding the dependencies between variables.
+In the [statistics_analysis_retail.ipynb](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/statistics_analysis_retail.ipynb) file, we conducted trend analysis and significance testing on key parts of the above code. This helped in understanding the dependencies between variables.
 
 ### Conclusion
 We have compiled the main conclusions and visualizations of the project in [Ecommerce_affecting_Slides.pdf](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/Ecommerce_affecting_Slides.pdf) and [Ecommerce_Affecting_Report.pdf](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/Ecommerce_Affecting_Report.pdf).
