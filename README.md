@@ -35,7 +35,7 @@ The project utilizes data scraped from the official website of the National Bure
 
 For detailed scraping progress and methodologies, refer to the notebook:
 
-- [`CNStatsCrawler.ipynb`](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/src/CNStatsCrawler.ipynb) - A Jupyter Notebook designed for scraping and analyzing statistical data from 2018-2021. It employs Python along with various data processing and visualization libraries.
+- [`CNStatsCrawler.ipynb`](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/src/CNStatsCrawler.ipynb) - A Jupyter Notebook designed for scraping and analyzing statistical data from 2019-2023. It employs Python along with various data processing and visualization libraries.
 
 ### Data Preprocessing
 
