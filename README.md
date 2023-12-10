@@ -11,7 +11,9 @@ The results are shown in [statistic_analysis_retail.ipynb](https://github.com/Ad
 
 ## Environment Setup
 
-To run this project, the following Python packages need to be installed:
+Ensure Python version 3.x is installed on your system. Download and install it from the [official Python website](https://www.python.org/downloads/).
+
+Use pip, Python's package manager, to install the required packages:
 
 - requests
 - numpy
@@ -21,11 +23,6 @@ To run this project, the following Python packages need to be installed:
 - plotly
 - statsmodels
 
-### Installation Steps
-
-Ensure Python version 3.x is installed on your system. Download and install it from the [official Python website](https://www.python.org/downloads/).
-
-Use pip, Python's package manager, to install the required packages:
 
 ## Data Source
 
@@ -43,7 +40,7 @@ The following notebook is dedicated to the preprocessing of the scraped data:
 
 - [`Preprocessing.ipynb`](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/src/Preprocessing.ipynb) - This Jupyter Notebook focuses on data preprocessing techniques, including data cleaning, transformation, and preparation for analysis or machine learning models using Python's data manipulation libraries.
 
-##Analysis
+## Analysis
 ### Visual Analysis
 In the [e_commerce_Visualization.ipynb](https://github.com/AdaChen1130/Ecommerce-affecting-brickandmortar-retail/blob/main/e_commerce_Visualization.ipynb) file, we visualized data from almost all categories and created visualizations in different views based on the type of data. This process helped in uncovering elements that are significant for analysis.
 
